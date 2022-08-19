@@ -1,0 +1,24 @@
+{
+  "name": "ksp",
+  "version": "1.0.0",
+  "description": "restApi project Koperasi-simpan-pinjam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ayysz/restApi.git"
+  },
+  "author": "reactor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ayysz/restApi/issues"
+  },
+  "homepage": "https://github.com/Ayysz/restApi#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.19"
+  }
+}
