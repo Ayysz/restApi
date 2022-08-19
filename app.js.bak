@@ -1,0 +1,55 @@
+// import dependencies
+const express = require('express');
+const bodyParser = require('body-parser');
+const helmet = require('helmet');
+const cors = require('cors');
+const morgan = require('morgan');
+const router = require('./router.js');
+var env = require('dotenv').config();
+
+
+// defining app from express and env
+const app = express();
+    env = process.env;
+
+// defining from .env
+const port = env.PORT;
+const host =  env.HOST;
+
+// array untuk database sementara
+const tmp = [
+    {
+        title : 'hallo dunia 2!'
+    }
+];
+
+// menambahkan helmet untuk security API
+app.use(helmet());
+
+//menambahkan body parser untuk menangkap respon body json menjadi object JS
+app.use(bodyParser.json()); 
+
+// menambahkan body parser yang sudah encoded
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+
+// memperbolehkan CORS untuk semua modul
+app.use(cors());
+
+// menambahkan morgan untuk log http
+app.use(morgan('combined'));
+
+// mendefinisikan endpoint yang mengembalikan tmp
+    // app.get('/', (req,res) => {
+    //     res.send(tmp);
+// });
+
+app.use('/api', )
+
+app.listen(port, () => {
+    console.log(`Server running at http://${host}:${port}`);
+});
+// membuat server yang berjalan di ${port} = 3000
+
+
