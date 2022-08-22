@@ -94,7 +94,7 @@ router.post('/login', logInValidation, (req, res, next) => {
     )
 });
 
-// route untuk mendapat data user
+// route untuk mendapat test pass jwt
 router.post('/get-user', signUpValidation, (req, res, next) => {
     if(
         !req.headers.authorization ||
