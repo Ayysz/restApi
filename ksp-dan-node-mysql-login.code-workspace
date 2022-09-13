@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../node-mysql-registration-login-api"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}
